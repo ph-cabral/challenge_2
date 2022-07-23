@@ -1,0 +1,39 @@
+@api = http://localhost:8000/user/list/
+@ob2 = http://localhost:8000/user
+@ob1 = http://localhost:8000/user/
+
+Get {{api}}
+### 
+
+Get {{ob2}}/2
+###
+
+Get {{ob1}}1
+###
+
+Post {{api}}
+Content-Type: application/json
+
+{
+    "title" : "tercera peli",
+    "description" : "tercera peli",
+}
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name" : "comodoro"
+}
+###
+
+PUT {{ob2}}/2
+Content-Type: application/json
+
+{
+    "name" : "comodoro"
+}
+
+###
+DELETE  {{ob1}}1
